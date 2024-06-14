@@ -1,0 +1,10 @@
+(let Loop( (dgr 0) )
+    (define radian (/ (* dgr 3.1415926) 180 ) )
+    (if (not (> dgr 360) ) 
+        (begin 
+            (format #t "| cos(~a)=~5f \t | sin(~a)=~5f \t | tg(~a)=~5f \t |\n" dgr (cos dgr) dgr (sin dgr) dgr (tan dgr))
+            (newline)
+            (Loop (+ dgr 5) ) 
+        )
+    )
+)
